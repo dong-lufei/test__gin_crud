@@ -1,0 +1,18 @@
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (7 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (7 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.html
+
+[GIN-debug] GET    /                         --> test/routers.Init.func2 (7 handlers)
+[GIN-debug] GET    /zoos                     --> test/app/zoos.getZoos (7 handlers)
+[GIN-debug] POST   /zoos                     --> test/app/zoos.addZoos (7 handlers)
+[GIN-debug] POST   /loginJSON                --> test/app/user.loginJSON (7 handlers)
+[GIN-debug] POST   /loginForm                --> test/app/user.loginForm (7 handlers)
+[GIN-debug] GET    /:username/:password      --> test/app/user.loginUri (7 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+127.0.0.1 - [Tue, 15 Nov 2022 15:05:56 CST] "GET / HTTP/1.1 200 982.1µs "curl/7.83.1" "
+127.0.0.1 - [Tue, 15 Nov 2022 15:06:17 CST] "GET /zoos HTTP/1.1 200 327.8µs "curl/7.83.1" "
+::1 - [Tue, 15 Nov 2022 15:06:30 CST] "GET /zoos HTTP/1.1 200 0s "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" "
